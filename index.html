@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Restaurant Asador del chapulin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lora:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary sticky-top fondo">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Asador del chapulín</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Secciones</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#seccionDesayunos"><button type="button" class="btn" data-bs-dismiss="offcanvas">Desayunos</button></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#seccionPlatillos"><button type="button" class="btn" data-bs-dismiss="offcanvas">Platillos</button></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#seccionBebidas"><button type="button" class="btn" data-bs-dismiss="offcanvas">Bebidas</button></a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#seccionPostres"><button type="button" class="btn" data-bs-dismiss="offcanvas">Postres</button></a>
+                </li>
+                
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div id="seccionDesayunos">
+            <h1>Desayunos</h1>
+            <h2>Huevos</h2>
+            <div id="seccionHuevos" class="card">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/huevosChorizo.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/huevosjamon.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/huevosChorizo.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div id="listaHuevos" class="lista">
+                </div>
+            </div>
+            <br>
+            <h2>Especialidad</h2>
+            <div id="seccionEspecialidad"></div>
+            <br>
+            <h2>Tradicionales</h2>
+            <div id="seccionTradicionales"></div>
+            <br>
+            <h2>Del comal</h2>
+            <div id="seccionDelComal"></div>
+        </div>
+
+        <br>
+        <div id="seccionPlatillos">
+            <h1>Platillos</h1>
+            
+            <h2>Botanas</h2>
+            <div id="seccionBotanas"></div>
+            <br>
+            <h2>Sopas y Spaguetti</h2>
+            <div id="seccionSopas"></div>
+            <br>
+            <h2>Caldos</h2>
+            <div id="seccionCaldos"></div>
+            <br>
+            <h2>Tlayudas</h2>
+            <div id="seccionTlayudas"></div>
+            <br>
+            <h2>Conejo</h2>
+            <div id="seccionConejo"></div>
+            <br>
+            <h2>Carnes</h2>
+            <div id="seccionCarnes"></div>
+            <br>
+            <h2>Mixtos</h2>
+            <div id="seccionMixtos"></div>
+            <br>
+            <h2>Parillada</h2>
+            <div id="seccionParrillada"></div>
+            <br>
+            <h2>Mariscos</h2>
+            <div id="seccionMariscos"></div>
+            <br>
+            <h2>Moles</h2>
+            <div id="seccionMoles"></div>
+            <br>
+            <h2>Aguacates Rellenos</h2>
+            <div id="seccionAguacates"></div>
+            <br>
+            <h2>Para los peques</h2>
+            <div id="seccionPeques"></div>
+            <br>
+    
+            <h2>Extras</h2>
+            <div id="seccionExtras"></div>
+            <br>
+        </div>
+        <br>
+        <div id="seccionBebidas">
+            <h1>Bebidas</h1>
+            <h2>Bebidas Calientes</h2>
+            <div id="seccionBebidasCalientes"></div>
+            <br>
+            <h2>Bebidas Frías</h2>
+            <div id="seccionBebidasFrias"></div>
+            <br>
+            <h2>Aguas</h2>
+            <div id="seccionAguas"></div>
+            <br>
+            <h2>Embotellados</h2>
+            <div id="seccionEmbotellados"></div>
+            <br>
+            <h2>Clericot</h2>
+            <div id="seccionClericot"></div>
+            <br>
+            <h2>Cervezas</h2>
+            <div id="seccionCervezas"></div>
+            <br>    
+        </div>
+
+        <div id="seccionPos">
+            <h2>Postres</h2>
+            <div id="seccionPostres"></div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+ul {
+    list-style-type: none;
+    padding: 0; /* Esto elimina el espacio entre los elementos de la lista */
+    margin: 0; /* Esto elimina el espacio alrededor de la lista */
+  }
+
+h2{
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+
+body{
+    background-color: #F6F1F1;
+    font-family: 'lora',serif;
+}
+
+.card{
+    border: 10 solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    height: 250px;
+}
+
+.fondo{
+    background-color: #F6F1F1;
+}
+
+.lista{
+    padding: 5px;
+}
